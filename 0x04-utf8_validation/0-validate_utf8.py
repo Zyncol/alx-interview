@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-UTF-8 Validation 
+UTF-8 Validation
 """
 
 
@@ -11,8 +11,8 @@ def validUTF8(data):
     """
     numberOfbytes = 0
 
-    m_1 = 1 << 7
-    m_2 = 1 << 6
+    ma_1 = 1 << 7
+    ma_2 = 1 << 6
 
     for i in data:
 
@@ -31,8 +31,8 @@ def validUTF8(data):
                 return False
 
         else:
-            if not (i & m_1 and not (i & m_2)):
-                    return False
+            if not (i & ma_1 and not (i & ma_2)):
+                return False
 
         numberOfbytes -= 1
 
