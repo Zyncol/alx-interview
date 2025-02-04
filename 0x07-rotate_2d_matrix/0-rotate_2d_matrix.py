@@ -11,7 +11,7 @@ def rotate_2d_matrix(matrix):
     """
     num = len(matrix)
     for z in range(int(num / 2)):
-        y = (n - z - 1)
+        y = (num - z - 1)
         for k in range(z, y):
             x = (num - 1 - k)
             # current number
